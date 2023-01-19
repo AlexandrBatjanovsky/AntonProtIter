@@ -1,0 +1,55 @@
+{
+    "mode": "inspect",
+    "net": "dhd",
+    "hyperparams": {
+        "batch": 12,
+        "batch_val": 12,
+        "crop": 80,
+        "num_stages": 4,
+        "freezed_stages": 0,
+        "channels": [
+            "dst",
+            "cos_ma",
+            "resid"
+        ],
+        "learning_rate": 0.01
+    },
+    "attempt": {
+        "checkpoint": "dhd0_at9/save.ckpt",
+        "tag": "[tag]",
+        "saves_dir": "",
+        "attempt": 0,
+        "epoch": 0,
+        "attempt_epochs": 0,
+        "accelerator": "gpu"
+    },
+    "threads": {
+        "train_loader": 3,
+        "valid_loader": 3,
+        "preproc": 8,
+        "use_process": false
+    },
+    "data": {
+        "train": "prot_pkl/train_set.csv",
+        "valid": "prot_pkl/valid_set.csv",
+        "new": false,
+        "check_align": true
+    },
+    "inspect": {
+        "data": "train",
+        "count": 5
+    },
+    "bumping": {
+        "method": "naive",
+        "distance": 3.4,
+        "tolerance": 8e-06
+    },
+    "fcn": {
+        "last": 512,
+        "resnet": true,
+        "track_cl": false,
+        "use_cl": false,
+        "batchN": false,
+        "reduced": false
+    }
+}

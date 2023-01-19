@@ -1,0 +1,5 @@
+.ipynb_checkpoints/
+__pycache__/
+prot_pkl/
+fcn5_at10/
+dhd0_at9/

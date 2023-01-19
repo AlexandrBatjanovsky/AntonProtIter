@@ -1,0 +1,7 @@
+numpy
+pandas
+biopython
+scipy
+sklearn
+torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+pytorch_lightning
